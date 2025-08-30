@@ -20,7 +20,7 @@ function App() {
     setIsSpinning(true);
 
     try {
-      const response = await fetch('/api/spin', {
+      const response = await fetch('https://sibspinthewheelbackend.vercel.app/api/spin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userName: name, userEmail: email }),
