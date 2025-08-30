@@ -21,7 +21,7 @@ function App() {
 
     try {
       const apiURL = import.meta.env.VITE_API_URL;
-      const response = await fetch('${apiUrl}/api/spin', {
+      const response = await fetch(`${apiUrl}/api/spin`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userName: name, userEmail: email }),
